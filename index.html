@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Login Form</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="image">
+                <!-- Image in CSS -->
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Log in to access your account.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="field">
+                        <input type="email" name="login" id="ilogin" required placeholder="Email" autocomplete="email" maxlength="30">
+                        <label for="ilogin"><span class="material-symbols-outlined">person</span></label>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="password" id="ipassword" placeholder="Password" required autocomplete="current-password" minlength="8" maxlength="20">
+                        <label for="ipassword"><span class="material-symbols-outlined">lock</span></label>
+                    </div>
+                    <input type="submit" value="Log In">
+                    <a href="forgot.html">Forgot password?</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

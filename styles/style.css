@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #115031a8;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#login {
+    background-color: #FFFFFF;
+    width: 275px;
+    height: 555px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#image {
+    display: block;
+    background: #115031a8 url('../images/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: right top;
+    height: 200px;
+}
+
+section#login > div#form {
+    display: block;
+    padding: 10px;
+}
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p {
+    font-size: 1em;
+    text-align: center;
+}
+
+form > div.field {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #1a7548;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px -2px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #135333;
+}
+
+form > a {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 5px;
+    margin: 5px 50px;
+}
+
+.material-symbols-outlined {
+    color: #135333;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.field > input {
+    font-size: 1em;
+    width: calc(100% - 50px);
+    height: 100%;
+    border: 2px solid #135333a1;
+    border-radius: 8px;
+    padding: 2.3px;
+    padding: 5px 10px;
+    margin: 20px 0px;
+    transform: translateY(-10px);
+}
+
+div.field > input:hover {
+    border: 2px solid #0d3d25;
+}
+
+form > a:hover {
+    color: #0d3a23;
+}
